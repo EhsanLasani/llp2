@@ -1,0 +1,51 @@
+/* [project]/components/FeatureCard.module.scss.module.css [app-client] (css) */
+.FeatureCard-module-scss-module__IQhxVa__card {
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  color: var(--ink);
+  border-radius: 16px;
+  grid-template-rows: auto auto auto 1fr;
+  row-gap: 8px;
+  padding: 18px 16px;
+  display: grid;
+  box-shadow: 0 2px 14px #0000000a;
+}
+
+.FeatureCard-module-scss-module__IQhxVa__icon {
+  width: 36px;
+  height: 36px;
+  color: var(--brand);
+  background: color-mix(in srgb, var(--brand) 10%, var(--surface));
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+}
+
+.FeatureCard-module-scss-module__IQhxVa__title {
+  color: var(--ink);
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.FeatureCard-module-scss-module__IQhxVa__badge {
+  letter-spacing: .02em;
+  background: color-mix(in srgb, var(--brand) 16%, var(--surface));
+  color: var(--brand);
+  border-radius: 999px;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.FeatureCard-module-scss-module__IQhxVa__desc {
+  color: var(--muted);
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+/*# sourceMappingURL=components_FeatureCard_module_scss_module_css_bad6b30c._.single.css.map*/

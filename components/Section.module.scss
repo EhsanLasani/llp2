@@ -1,0 +1,98 @@
+/* ============================================================
+   Section (scoped)
+   - Base spacing, light/dark/raised variants
+   - Alt rows helper for automatic background alternation
+   ============================================================ */
+
+.section {
+  padding: 56px 0;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+.title {
+  font-size: var(--h2);
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 0 12px;
+  color: var(--ink);
+  text-align: center; /* easy to switch off per-section in JSX if needed */
+}
+
+.subtitle {
+  color: var(--muted);
+  font-size: var(--text);
+  max-width: 65ch;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Variants */
+.raised {
+  background: var(--surface-raised);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--border);
+}
+
+.light {
+  background: var(--surface);
+}
+
+.dark {
+  background: var(--header-bg);
+  color: var(--ink-inverse);
+}
+
+.dark .subtitle,
+.dark .eyebrow {
+  color: var(--muted-inverse);
+}
+
+/* Tight spacing options */
+.compact {
+  padding: 40px 0;
+}
+.noPad {
+  padding: 0;
+}
+
+/* Content wrapper if you want an inner grid unique to Section */
+.content {
+  display: grid;
+  gap: 16px;
+}
+
+/* Alt rows pattern for a stack of sections (apply .altRows to a parent wrapper) */
+.altRows > :global(.section),
+.altRows > .section {
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.altRows > :global(.section):nth-of-type(even),
+.altRows > .section:nth-of-type(even) {
+  background: var(--surface);
+}
+
+/* Optional: highlight every third section for visual rhythm */
+.altRows > :global(.section):nth-of-type(3n),
+.altRows > .section:nth-of-type(3n) {
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+}
+
+/* Subtle separators */
+.section + .section {
+  border-top: 1px solid var(--border);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .title {
+    margin-bottom: 10px;
+  }
+  .subtitle {
+    margin-bottom: 32px;
+  }
+}

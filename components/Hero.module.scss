@@ -1,0 +1,96 @@
+/* ============================================================
+   Hero (scoped)
+   - Apple-like typography, token-based colors
+   - Optional dark/brand gradient variants
+   ============================================================ */
+
+.hero {
+  background: var(--bg);
+  color: var(--ink);
+  // padding: 120px 0 80px;
+  padding: 96px 0 96px; /* balanced top and bottom */
+  text-align: center;
+}
+
+.title {
+  font-size: var(--h1);
+  // font-size: clamp(40px, 5vw, 72px); /* more fluid scaling */
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  margin: 300 0 20px;
+  color: var(--ink);
+}
+
+.lead {
+  font-family: inherit;
+  font-size: var(--lead);
+  font-weight: 700;
+  color: var(--muted-strong);
+  max-width: 70ch;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* Optional layout variants */
+.left {
+  text-align: left;
+}
+.center {
+  text-align: center;
+}
+
+/* Brand-dark gradient variant */
+.brandDark {
+  color: var(--ink-inverse);
+  background: linear-gradient(
+    180deg,
+    var(--header-bg) 0%,
+    #0f2433 60%,
+    #152f42 100%
+  );
+}
+
+/* Optional VFX layer if used in JSX as <div className={styles.bgVfx} /> */
+.bgVfx {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+      900px 420px at 15% 0%,
+      rgba(255, 255, 255, 0.12),
+      transparent
+    ),
+    radial-gradient(
+      600px 260px at 80% 10%,
+      color-mix(in srgb, var(--brand) 25%, transparent),
+      transparent
+    );
+  mix-blend-mode: screen;
+}
+
+/* Ensure stacking if VFX is used */
+.inner {
+  position: relative;
+  z-index: 1;
+}
+
+/* Compact variant if needed on inner pages */
+.compact {
+  padding: 80px 0 56px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 900px) {
+  .hero {
+    padding: 96px 0 64px;
+  }
+}

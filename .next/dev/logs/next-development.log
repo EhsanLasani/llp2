@@ -1,0 +1,114 @@
+[00:00:00.725] Server  LOG      ✓ Ready in 469ms
+[00:00:07.372] Server  ERROR    ⨯ Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  <... render={function render}>
+              ^^^^^^^^^^^^^^^^^
+[00:00:07.878] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:07.878] Browser ERROR   uncaughtError: Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  <... render={function render}>
+              ^^^^^^^^^^^^^^^^^
+[00:00:48.074] Server  ERROR    ⨯ Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  <... render={function render}>
+              ^^^^^^^^^^^^^^^^^
+[00:00:48.189] Server  LOG      ✓ Compiled in 80ms
+[00:00:48.193] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:00:48.342] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:48.644] Browser ERROR   uncaughtError: Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  <... render={function render}>
+              ^^^^^^^^^^^^^^^^^
+[00:00:56.248] Server  ERROR    ⨯ Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  <... render={function render}>
+              ^^^^^^^^^^^^^^^^^
+[00:00:56.365] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:56.365] Browser ERROR   uncaughtError: Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  <... render={function render}>
+              ^^^^^^^^^^^^^^^^^
+[00:01:28.693] Server  ERROR    ⨯ Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  <... render={function render}>
+              ^^^^^^^^^^^^^^^^^
+[00:01:28.794] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:28.794] Browser ERROR   uncaughtError: Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  <... render={function render}>
+              ^^^^^^^^^^^^^^^^^
+[00:04:34.646] Browser ERROR   ./components/Section.tsx:36:3
+Parsing ecmascript source code failed
+  34 | export default function Section({
+  35 |   eyebrow
+> 36 |   title,
+     |   ^^^^^
+  37 |   subtitle,
+  38 |   tone = "default",
+  39 |   variant,
+
+Expected ',', got 'title'
+
+Import trace:
+  Server Component:
+    ./components/Section.tsx
+    ./app/page.tsx
+[00:04:36.643] Browser ERROR   ./components/Section.tsx:36:3
+Parsing ecmascript source code failed
+  34 | export default function Section({
+  35 |   eyebrow
+> 36 |   title,
+     |   ^^^^^
+  37 |   subtitle,
+  38 |   tone = "default",
+  39 |   variant,
+
+Expected ',', got 'title'
+
+Import trace:
+  Server Component:
+    ./components/Section.tsx
+    ./app/page.tsx
+[00:04:51.867] Server  LOG      ✓ Compiled in 3ms
+[00:04:52.149] Server  ERROR    ⨯ Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  <... render={function render}>
+              ^^^^^^^^^^^^^^^^^
+[00:04:52.529] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:53.648] Browser ERROR   uncaughtError: Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  <... render={function render}>
+              ^^^^^^^^^^^^^^^^^
+[00:05:00.188] Server  ERROR    ⨯ Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  <... render={function render}>
+              ^^^^^^^^^^^^^^^^^
+[00:05:00.576] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:01.648] Browser ERROR   uncaughtError: Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  <... render={function render}>
+              ^^^^^^^^^^^^^^^^^
+[00:05:14.430] Server  ERROR    ⨯ Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  <... render={function render}>
+              ^^^^^^^^^^^^^^^^^
+[00:05:14.902] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:15.655] Browser ERROR   uncaughtError: Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  <... render={function render}>
+              ^^^^^^^^^^^^^^^^^
+[00:05:23.730] Server  ERROR    ⨯ Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  <... render={function render}>
+              ^^^^^^^^^^^^^^^^^
+[00:05:24.097] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:24.641] Browser ERROR   uncaughtError: Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  <... render={function render}>
+              ^^^^^^^^^^^^^^^^^
+[00:06:28.184] Server  ERROR    ⨯ Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  <... render={function render}>
+              ^^^^^^^^^^^^^^^^^
+[00:06:28.274] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:28.274] Browser ERROR   uncaughtError: Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  <... render={function render}>
+              ^^^^^^^^^^^^^^^^^
+[00:11:17.135] Server  ERROR    ⨯ Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  <... render={function render}>
+              ^^^^^^^^^^^^^^^^^
+[00:11:17.392] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:11:17.574] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:11:18.646] Browser ERROR   uncaughtError: Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  <... render={function render}>
+              ^^^^^^^^^^^^^^^^^
+[00:11:35.913] Server  LOG      ✓ Compiled in 107ms
+[00:11:35.926] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:11:36.100] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:23:52.167] Server  LOG      ✓ Compiled in 72ms
+[02:23:52.442] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:24:10.602] Server  LOG      ✓ Compiled in 52ms
+[02:26:07.914] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

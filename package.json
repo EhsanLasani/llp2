@@ -1,0 +1,39 @@
+{
+  "name": "lasani-next-carbon",
+  "private": true,
+  "version": "0.1.0",
+  "overrides": {
+    "ajv": "^8.12.0",
+    "ajv-keywords": "^5.1.0",
+    "schema-utils": "^4.2.0",
+    "webpack-dev-middleware": "^6.1.3"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "@carbon/react": "^1.60.0",
+    "@carbon/styles": "^1.47.0",
+    "clsx": "^2.1.0",
+    "lucide-react": "^0.548.0",
+    "next": "latest",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@storybook/nextjs": "^10.0.1",
+    "@storybook/react": "^10.0.1",
+    "@types/node": "24.9.2",
+    "@types/react": "19.2.2",
+    "eslint": "^9.38.0",
+    "eslint-config-next": "latest",
+    "sass": "^1.93.2",
+    "storybook": "^10.0.1",
+    "typescript": "^5.6.3"
+  }
+}

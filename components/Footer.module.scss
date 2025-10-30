@@ -1,0 +1,73 @@
+.footer {
+  background: var(--footer-bg);
+  color: var(--footer-ink);
+  border-top: 1px solid var(--border);
+  padding: 48px 0;
+}
+
+/* Responsive grid for columns */
+.columns {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .columns {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 640px) {
+  .columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Titles & text */
+.title {
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+/* Address block (semantic contact info) */
+.address {
+  font-style: normal;
+  line-height: 1.8;
+}
+.address a {
+  color: var(--footer-ink);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.address a:hover {
+  color: var(--brand);
+}
+
+/* Nav list */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1.9;
+}
+.list a {
+  color: var(--footer-ink);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.list a:hover {
+  color: var(--brand);
+}
+
+/* Bottom bar */
+.bottom {
+  margin-top: 32px;
+  border-top: 1px solid var(--border);
+  padding-top: 16px;
+  font-size: 14px;
+  color: var(--muted);
+  text-align: center;
+}

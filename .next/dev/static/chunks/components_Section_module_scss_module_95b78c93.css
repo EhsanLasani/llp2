@@ -1,0 +1,86 @@
+/* [project]/components/Section.module.scss.module.css [app-client] (css) */
+.Section-module-scss-module__-mlm7q__section {
+  color: var(--ink);
+  background: var(--bg);
+  padding: 56px 0;
+}
+
+.Section-module-scss-module__-mlm7q__title {
+  font-size: var(--h2);
+  color: var(--ink);
+  text-align: center;
+  margin: 0 0 12px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.Section-module-scss-module__-mlm7q__subtitle {
+  color: var(--muted);
+  font-size: var(--text);
+  text-align: center;
+  max-width: 65ch;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+.Section-module-scss-module__-mlm7q__raised {
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 20px #0000000f;
+}
+
+.Section-module-scss-module__-mlm7q__light {
+  background: var(--surface);
+}
+
+.Section-module-scss-module__-mlm7q__dark {
+  background: var(--header-bg);
+  color: var(--ink-inverse);
+}
+
+.Section-module-scss-module__-mlm7q__dark .Section-module-scss-module__-mlm7q__subtitle, .Section-module-scss-module__-mlm7q__dark .Section-module-scss-module__-mlm7q__eyebrow {
+  color: var(--muted-inverse);
+}
+
+.Section-module-scss-module__-mlm7q__compact {
+  padding: 40px 0;
+}
+
+.Section-module-scss-module__-mlm7q__noPad {
+  padding: 0;
+}
+
+.Section-module-scss-module__-mlm7q__content {
+  gap: 16px;
+  display: grid;
+}
+
+:is(.Section-module-scss-module__-mlm7q__altRows > .section, .Section-module-scss-module__-mlm7q__altRows > .Section-module-scss-module__-mlm7q__section) {
+  background: var(--bg);
+  color: var(--ink);
+}
+
+:is(.Section-module-scss-module__-mlm7q__altRows > .section:nth-of-type(2n), .Section-module-scss-module__-mlm7q__altRows > .Section-module-scss-module__-mlm7q__section:nth-of-type(2n)) {
+  background: var(--surface);
+}
+
+:is(.Section-module-scss-module__-mlm7q__altRows > .section:nth-of-type(3n), .Section-module-scss-module__-mlm7q__altRows > .Section-module-scss-module__-mlm7q__section:nth-of-type(3n)) {
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+}
+
+.Section-module-scss-module__-mlm7q__section + .Section-module-scss-module__-mlm7q__section {
+  border-top: 1px solid var(--border);
+}
+
+@media (max-width: 900px) {
+  .Section-module-scss-module__-mlm7q__title {
+    margin-bottom: 10px;
+  }
+
+  .Section-module-scss-module__-mlm7q__subtitle {
+    margin-bottom: 32px;
+  }
+}
+
+/*# sourceMappingURL=components_Section_module_scss_module_95b78c93.css.map*/

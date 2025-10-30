@@ -1,0 +1,76 @@
+/* [project]/components/Footer.module.scss.module.css [app-client] (css) */
+.Footer-module-scss-module__-TkEBW__footer {
+  background: var(--footer-bg);
+  color: var(--footer-ink);
+  border-top: 1px solid var(--border);
+  padding: 48px 0;
+}
+
+.Footer-module-scss-module__-TkEBW__columns {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+  gap: 32px;
+  display: grid;
+}
+
+@media (max-width: 900px) {
+  .Footer-module-scss-module__-TkEBW__columns {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .Footer-module-scss-module__-TkEBW__columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+.Footer-module-scss-module__-TkEBW__title {
+  color: var(--ink);
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.Footer-module-scss-module__-TkEBW__address {
+  font-style: normal;
+  line-height: 1.8;
+}
+
+.Footer-module-scss-module__-TkEBW__address a {
+  color: var(--footer-ink);
+  text-decoration: none;
+  transition: color .2s;
+}
+
+.Footer-module-scss-module__-TkEBW__address a:hover {
+  color: var(--brand);
+}
+
+.Footer-module-scss-module__-TkEBW__list {
+  margin: 0;
+  padding: 0;
+  line-height: 1.9;
+  list-style: none;
+}
+
+.Footer-module-scss-module__-TkEBW__list a {
+  color: var(--footer-ink);
+  text-decoration: none;
+  transition: color .2s;
+}
+
+.Footer-module-scss-module__-TkEBW__list a:hover {
+  color: var(--brand);
+}
+
+.Footer-module-scss-module__-TkEBW__bottom {
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  text-align: center;
+  margin-top: 32px;
+  padding-top: 16px;
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=components_Footer_module_scss_module_css_bad6b30c._.single.css.map*/

@@ -1,0 +1,535 @@
+@import "@carbon/styles/css/styles.css";
+
+/* ============================================================
+   LASANI — Global stylesheet
+   Keep this file for tokens + primitives + site shell only.
+   Component visuals go into CSS modules per component.
+   ============================================================ */
+
+/* ─────────────────────────────────────────────────────────────
+   THEME TOKENS (light baseline) — all components must use these
+   ───────────────────────────────────────────────────────────── */
+:root {
+  /* Brand core */
+  --brand-500: #2a7db1; /* main brand */
+  --brand-600: #1d6b96; /* brand hover/darker */
+  --brand-200: #cfe3f0; /* subtle borders on light surfaces */
+
+  /* Surfaces & text (light) */
+  --paper: #ffffff;
+  --ink: #0b0f14;
+  --muted: #6b7280;
+  --surface: #f6f9fb; /* section light bg */
+  --surface-raised: #ffffff; /* cards/panels on light */
+  --border: #e8edf2; /* light border */
+  --border-strong: #d5dee6;
+
+  /* Header / Footer */
+  --header-bg: #0c0f12; /* dark header baseline */
+  --header-border: #0f2433;
+  --footer-bg: #fafcfd;
+  --footer-ink: #6b7280;
+
+  /* Container & spacing */
+  --container-max: 1120px;
+  --gutter: 20px;
+  --radius: 12px;
+
+  /* Type scale */
+  --h1: clamp(40px, 6vw, 72px);
+  --h2: clamp(28px, 3vw, 40px);
+  --lead: clamp(18px, 2vw, 22px);
+  --text: 18px;
+  // --app-header-height: 20px;
+  /* Semantic aliases */
+  --brand: var(--brand-500);
+  --brand-hover: var(--brand-600);
+  --bg: var(--paper);
+  --ink-inverse: #ffffff; /* on dark */
+  --muted-inverse: rgba(255, 255, 255, 0.75);
+}
+
+/* ─────────────────────────────────────────────────────────────
+   DARK THEME OVERRIDE  (apply by adding data-theme="dark" on <html>)
+   ───────────────────────────────────────────────────────────── */
+:root[data-theme="dark"] {
+  --paper: #0b0f14;
+  --ink: #eef2f6;
+  --muted: #a9b1ba;
+  --muted-strong: #3a3a3a;
+  --surface: #10151b;
+  --surface-raised: #181f26;
+  --border: #1c2430;
+  --border-strong: #283243;
+
+  --header-bg: #0b0f14;
+  --header-border: #1a2633;
+  --footer-bg: #0d1218;
+  --footer-ink: #a9b1ba;
+
+  /* Brand in dark */
+  --brand-500: #2a7db1;
+  --brand-600: #3289c1;
+  --brand-200: #2a7db133;
+
+  --brand: var(--brand-500);
+  --brand-hover: var(--brand-600);
+
+  --bg: var(--paper);
+  --ink-inverse: #0b0f14;
+  --muted-inverse: rgba(0, 0, 0, 0.72);
+}
+
+/* ─────────────────────────────────────────────────────────────
+   RESET / BASE
+   ───────────────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  // padding-top: var(--app-header-height);
+}
+
+/* === BASE FONT STACK === */
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: ui-sans-serif, system-ui, -apple-system, linkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: var(--text);
+  font-weight: 400;
+  line-height: 1.65;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ============================================================
+   DISPLAY & HEADING SCALE
+   ============================================================ */
+
+/* Hero / Marketing headlines */
+.display-1 {
+  font-size: clamp(72px, 10vw, 120px);
+  font-weight: 700;
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+  margin: 0 0 0.4em;
+}
+
+.display-2 {
+  font-size: clamp(56px, 7vw, 96px);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  color: var(--ink);
+  margin: 0 0 0.5em;
+}
+
+/* Standard content hierarchy */
+h1,
+.h1 {
+  font-size: clamp(40px, 5.5vw, 72px);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.5em;
+  color: var(--ink);
+}
+
+h2,
+.h2 {
+  font-size: clamp(32px, 3.8vw, 48px);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  margin: 0 0 0.6em;
+  color: var(--ink);
+}
+
+h3,
+.h3 {
+  font-size: clamp(24px, 2.6vw, 32px);
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 0 0 0.6em;
+  color: var(--ink);
+}
+
+h4,
+.h4 {
+  font-size: clamp(20px, 1.8vw, 24px);
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 0 0 0.5em;
+  color: var(--ink);
+}
+
+h5,
+.h5 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.45;
+  margin: 0 0 0.4em;
+  color: var(--ink);
+}
+
+h6,
+.h6 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0 0 0.4em;
+  color: var(--muted);
+}
+
+/* ============================================================
+   PARAGRAPHS, LEAD, AND BODY TEXT
+   ============================================================ */
+p {
+  font-size: var(--text);
+  line-height: 1.65;
+  margin: 0 0 1.2em;
+  color: var(--ink);
+}
+
+.lead {
+  font-size: clamp(18px, 2vw, 22px);
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--muted);
+  max-width: 700px;
+  margin: 0 auto 2.5em;
+}
+
+.small {
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--muted);
+}
+
+.caption {
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--muted);
+}
+
+/* ============================================================
+   SPECIAL USE TEXT
+   ============================================================ */
+
+/* Eyebrow / Overline labels */
+.eyebrow {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 0.5em;
+}
+
+/* Muted text for secondary labels */
+.muted {
+  color: var(--muted);
+}
+
+/* Strong emphasis */
+strong {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+/* Italic emphasis */
+em {
+  font-style: italic;
+}
+
+/* ============================================================
+   LINKS
+   ============================================================ */
+a {
+  color: var(--brand);
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+a:hover {
+  color: var(--brand-hover);
+  text-decoration: underline;
+}
+
+/* ============================================================
+   LISTS
+   ============================================================ */
+ul,
+ol {
+  margin: 0 0 1.2em 1.4em;
+  padding: 0;
+  line-height: 1.6;
+}
+li {
+  margin-bottom: 0.4em;
+}
+
+/* ============================================================
+   BLOCKQUOTE
+   ============================================================ */
+blockquote {
+  font-size: clamp(18px, 1.8vw, 22px);
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--muted);
+  border-left: 4px solid var(--brand-200);
+  padding-left: 16px;
+  margin: 1.6em 0;
+  font-style: italic;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   LAYOUT: make footer anchor to bottom
+   ───────────────────────────────────────────────────────────── */
+
+/* Root layout grid */
+.site-shell {
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* header, main, footer */
+  min-height: 100vh; /* fill full viewport height */
+  background: var(--bg);
+  color: var(--ink);
+}
+
+/* Header at top */
+.site-shell > header,
+.site-shell > .cds--header {
+  grid-row: 1;
+}
+
+/* Main content grows */
+.site-shell > main {
+  grid-row: 2;
+}
+
+/* Footer always sits at the bottom */
+.site-shell > footer,
+.site-shell > .footer {
+  grid-row: 3;
+  margin-top: auto;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   PRIMITIVES
+   ───────────────────────────────────────────────────────────── */
+.container {
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.grid-2,
+.grid-3,
+.grid-4 {
+  display: grid;
+  gap: 16px;
+}
+.grid-2 {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Buttons — minimal shared primitives (component modules can refine) */
+.cta {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-size: 17px;
+  font-weight: 600;
+  border: 1.5px solid transparent;
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+.cta.primary {
+  background: var(--brand);
+  color: var(--ink-inverse);
+}
+.cta.primary:hover {
+  background: var(--brand-hover);
+}
+.cta.secondary {
+  background: transparent;
+  color: var(--brand);
+  border-color: var(--brand-200);
+}
+.cta.secondary:hover {
+  background: var(--brand);
+  color: var(--ink-inverse);
+  border-color: var(--brand);
+}
+
+/* Cards (primitive) — components can extend */
+.card {
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--ink);
+}
+
+/* Footer primitive (visuals should live in Footer.module.scss; this is safe fallback) */
+.footer {
+  background: var(--footer-bg);
+  color: var(--footer-ink);
+  border-top: 1px solid var(--border);
+  padding: 32px 0;
+}
+
+/* Carbon header baseline colors (Header.module.scss should style inner layout) */
+.cds--header {
+  // height: var(--app-header-height);
+  background-color: var(--header-bg);
+  border-bottom: 1px solid var(--header-border);
+}
+// /* Typography primitives (components should prefer tokens) */
+// h1 {
+//   font-size: var(--h1);
+//   line-height: 1.1;
+//   margin: 0 0 12px;
+// }
+// h2 {
+//   font-size: var(--h2);
+//   line-height: 1.2;
+//   margin: 0 0 8px;
+// }
+// .lead {
+//   font-size: var(--lead);
+//   color: var(--muted);
+// }
+// .muted {
+//   color: var(--muted);
+// }
+// .eyebrow {
+//   text-transform: uppercase;
+//   letter-spacing: 0.08em;
+//   color: var(--muted);
+//   font-size: 12px;
+// }
+
+/* ============================================================
+   RESPONSIVE REFINEMENTS — Mobile first, consistent breakpoints
+   Breakpoints: 1280 (xl), 1024 (lg), 900 (md), 768 (sm), 480 (xs)
+   ============================================================ */
+
+/* Base (>=0px) already defined above:
+   body { font-size: var(--text); line-height: 1.65; }
+   h1/h2/h3 use clamp() so only minor refinements below.
+*/
+
+/* === Large tablets / small laptops (≤1024px) === */
+@media (max-width: 1024px) {
+  body {
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  h1 {
+    font-size: clamp(36px, 5vw, 60px);
+  }
+  h2 {
+    font-size: clamp(28px, 3.6vw, 40px);
+  }
+  h3 {
+    font-size: clamp(22px, 2.4vw, 28px);
+  }
+
+  .lead {
+    font-size: 18px;
+    line-height: 1.55;
+  }
+}
+
+/* === Medium screens (≤900px) — grids collapse to 2/2/1 === */
+@media (max-width: 900px) {
+  .grid-4 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid-3 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* === Tablets / phones (≤768px) === */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: clamp(32px, 6vw, 52px);
+    line-height: 1.15;
+  }
+  h2 {
+    font-size: clamp(24px, 4vw, 36px);
+    line-height: 1.25;
+  }
+  h3 {
+    font-size: clamp(20px, 3.4vw, 28px);
+  }
+  h4 {
+    font-size: 18px;
+  }
+
+  .lead {
+    font-size: 17px;
+    line-height: 1.55;
+    margin-bottom: 2em;
+  }
+
+  /* Optional: tighten container gutters slightly on small screens */
+  .container {
+    padding-inline: calc(var(--gutter) * 0.85);
+  }
+}
+
+/* === Small phones (≤480px) — optional micro-tuning === */
+@media (max-width: 480px) {
+  h1 {
+    letter-spacing: -0.015em;
+  } /* slightly less tight at tiny sizes */
+  .lead {
+    max-width: 38ch;
+  } /* keeps lines ~70–75 characters total */
+}
+
+/* === Motion & sharpness niceties === */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
