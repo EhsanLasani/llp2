@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import Section from "@/components/Section";
 import FeatureCard from "@/components/FeatureCard";
+// import { Delivery, inventory-management } from "@carbon/icons-react";
 export default function Page() {
   return (
     <>
@@ -125,18 +126,63 @@ export default function Page() {
       </Section> */}
       <Section title="Core offerings">
         <div className="grid-2">
-          <div className="card">
+          <FeatureCard
+            title="Professional Tube Source"
+            badge="ISO 9001:2015"
+            icon={
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  fill="currentColor"
+                  d="M12 1l3 7h7l-6 4 3 7-7-4-7 4 3-7-6-4h7z"
+                />
+              </svg>
+            }
+          >
+            Your one-stop destination for seamless and welded tubes, chrome
+            plated bars, and honed or skived cylinders — sourced, finished, and
+            stocked for rapid availability with ISO 9001:2015 traceability.
+          </FeatureCard>
+
+          <FeatureCard
+            title="Integrated Machining & Services"
+            badge="Logistics Assurance"
+            icon={
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  fill="currentColor"
+                  d="M12 8v5l4 2 .9-1.8-3.4-1.7V8zM3 12a9 9 0 1 1 18 0 9 9 0 0 1-18 0z"
+                />
+              </svg>
+            }
+          >
+            Comprehensive machining, deep-hole drilling, boring, and repair
+            programs that keep hydraulic systems running with predictable
+            turnaround and strict quality alignment.
+          </FeatureCard>
+          {/* <div className="card">
             <strong>Professional Tube Source</strong>
             <br />
-            We supply specialty pipes & tubes, raw materials & components for
-            the hydraulic cylinder industry.
+            Your one-stop destination for seamless and welded tubes, chrome
+            plated bars, and honed or skived cylinders — sourced, finished, and
+            stocked for rapid availability with ISO 9001:2015 traceability.
           </div>
           <div className="card">
             <strong>Integrated Machining & Services</strong>
             <br />
-            Comprehensive machining programs that keep hydraulic systems running
-            with predictable turnaround.
-          </div>
+            Comprehensive machining, deep-hole drilling, boring, and repair
+            programs that keep hydraulic systems running with predictable
+            turnaround and strict quality alignment.
+          </div> */}
         </div>
       </Section>
     </>

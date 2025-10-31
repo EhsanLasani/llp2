@@ -37,14 +37,14 @@ export default function Hero() {
       <div className="container">
         <div className={styles.inner}>
           <h1 className={styles.title}>
-            PReliability. Commitment. Value. Engineered into Every Tube.
+            Reliability. Commitment. Value. Engineered into Every Tube.
           </h1>
           <p className={styles.lead}>
             Lasani Fluid Power LLP is India’s OEM partner of choice for over
             four decades — combining globally sourced materials, in-house
             precision super-finish machining, and an efficient supply-chain
             network to deliver unmatched reliability and value across every
-            hydraulic solution.
+            cylinder tube supply.
           </p>
           <div className={styles.actions}>
             <Link className="cta primary" href="/products">

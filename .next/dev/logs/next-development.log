@@ -1,114 +1,371 @@
-[00:00:00.725] Server  LOG      ✓ Ready in 469ms
-[00:00:07.372] Server  ERROR    ⨯ Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
-  <... render={function render}>
-              ^^^^^^^^^^^^^^^^^
-[00:00:07.878] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:07.878] Browser ERROR   uncaughtError: Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
-  <... render={function render}>
-              ^^^^^^^^^^^^^^^^^
-[00:00:48.074] Server  ERROR    ⨯ Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
-  <... render={function render}>
-              ^^^^^^^^^^^^^^^^^
-[00:00:48.189] Server  LOG      ✓ Compiled in 80ms
-[00:00:48.193] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:00:48.342] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:48.644] Browser ERROR   uncaughtError: Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
-  <... render={function render}>
-              ^^^^^^^^^^^^^^^^^
-[00:00:56.248] Server  ERROR    ⨯ Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
-  <... render={function render}>
-              ^^^^^^^^^^^^^^^^^
-[00:00:56.365] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:56.365] Browser ERROR   uncaughtError: Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
-  <... render={function render}>
-              ^^^^^^^^^^^^^^^^^
-[00:01:28.693] Server  ERROR    ⨯ Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
-  <... render={function render}>
-              ^^^^^^^^^^^^^^^^^
-[00:01:28.794] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:28.794] Browser ERROR   uncaughtError: Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
-  <... render={function render}>
-              ^^^^^^^^^^^^^^^^^
-[00:04:34.646] Browser ERROR   ./components/Section.tsx:36:3
+[00:00:00.755] Server  LOG      ✓ Ready in 483ms
+[00:00:06.052] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:24:08.186] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:33:20.689] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:07:20.247] Browser ERROR   ./app/page.tsx:4:29
 Parsing ecmascript source code failed
-  34 | export default function Section({
-  35 |   eyebrow
-> 36 |   title,
-     |   ^^^^^
-  37 |   subtitle,
-  38 |   tone = "default",
-  39 |   variant,
+  2 | import Section from "@/components/Section";
+  3 | import FeatureCard from "@/components/FeatureCard";
+> 4 | import { Delivery, inventory-management } from "@carbon/icons-react";
+    |                             ^
+  5 | export default function Page() {
+  6 |   return (
+  7 |     <>
 
-Expected ',', got 'title'
-
-Import trace:
-  Server Component:
-    ./components/Section.tsx
-    ./app/page.tsx
-[00:04:36.643] Browser ERROR   ./components/Section.tsx:36:3
+Expected ',', got '-'
+[01:07:20.247] Browser ERROR   ./app/page.tsx:4:29
 Parsing ecmascript source code failed
-  34 | export default function Section({
-  35 |   eyebrow
-> 36 |   title,
-     |   ^^^^^
-  37 |   subtitle,
-  38 |   tone = "default",
-  39 |   variant,
+  2 | import Section from "@/components/Section";
+  3 | import FeatureCard from "@/components/FeatureCard";
+> 4 | import { Delivery, inventory-management } from "@carbon/icons-react";
+    |                             ^
+  5 | export default function Page() {
+  6 |   return (
+  7 |     <>
 
-Expected ',', got 'title'
+Expected ',', got '-'
+[01:13:49.254] Browser ERROR   ./app/page.tsx:4:29
+Parsing ecmascript source code failed
+  2 | import Section from "@/components/Section";
+  3 | import FeatureCard from "@/components/FeatureCard";
+> 4 | import { Delivery, inventory-management } from "@carbon/icons-react";
+    |                             ^
+  5 | export default function Page() {
+  6 |   return (
+  7 |     <>
 
-Import trace:
-  Server Component:
-    ./components/Section.tsx
-    ./app/page.tsx
-[00:04:51.867] Server  LOG      ✓ Compiled in 3ms
-[00:04:52.149] Server  ERROR    ⨯ Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
-  <... render={function render}>
-              ^^^^^^^^^^^^^^^^^
-[00:04:52.529] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:04:53.648] Browser ERROR   uncaughtError: Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
-  <... render={function render}>
-              ^^^^^^^^^^^^^^^^^
-[00:05:00.188] Server  ERROR    ⨯ Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
-  <... render={function render}>
-              ^^^^^^^^^^^^^^^^^
-[00:05:00.576] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:05:01.648] Browser ERROR   uncaughtError: Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
-  <... render={function render}>
-              ^^^^^^^^^^^^^^^^^
-[00:05:14.430] Server  ERROR    ⨯ Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
-  <... render={function render}>
-              ^^^^^^^^^^^^^^^^^
-[00:05:14.902] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:05:15.655] Browser ERROR   uncaughtError: Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
-  <... render={function render}>
-              ^^^^^^^^^^^^^^^^^
-[00:05:23.730] Server  ERROR    ⨯ Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
-  <... render={function render}>
-              ^^^^^^^^^^^^^^^^^
-[00:05:24.097] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:05:24.641] Browser ERROR   uncaughtError: Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
-  <... render={function render}>
-              ^^^^^^^^^^^^^^^^^
-[00:06:28.184] Server  ERROR    ⨯ Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
-  <... render={function render}>
-              ^^^^^^^^^^^^^^^^^
-[00:06:28.274] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:06:28.274] Browser ERROR   uncaughtError: Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
-  <... render={function render}>
-              ^^^^^^^^^^^^^^^^^
-[00:11:17.135] Server  ERROR    ⨯ Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
-  <... render={function render}>
-              ^^^^^^^^^^^^^^^^^
-[00:11:17.392] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:11:17.574] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:11:18.646] Browser ERROR   uncaughtError: Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
-  <... render={function render}>
-              ^^^^^^^^^^^^^^^^^
-[00:11:35.913] Server  LOG      ✓ Compiled in 107ms
-[00:11:35.926] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:11:36.100] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:23:52.167] Server  LOG      ✓ Compiled in 72ms
-[02:23:52.442] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:24:10.602] Server  LOG      ✓ Compiled in 52ms
-[02:26:07.914] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+Expected ',', got '-'
+[01:13:49.254] Browser ERROR   ./app/page.tsx:4:29
+Parsing ecmascript source code failed
+  2 | import Section from "@/components/Section";
+  3 | import FeatureCard from "@/components/FeatureCard";
+> 4 | import { Delivery, inventory-management } from "@carbon/icons-react";
+    |                             ^
+  5 | export default function Page() {
+  6 |   return (
+  7 |     <>
+
+Expected ',', got '-'
+[01:13:58.127] Server  ERROR    ⨯ ./app/page.tsx:4:29
+Parsing ecmascript source code failed
+  2 | import Section from "@/components/Section";
+  3 | import FeatureCard from "@/components/FeatureCard";
+> 4 | import { Delivery, inventory-management } from "@carbon/icons-react";
+    |                             ^
+  5 | export default function Page() {
+  6 |   return (
+  7 |     <>
+
+Expected ',', got '-'
+
+
+[01:13:58.248] Browser ERROR   ./app/page.tsx:4:29
+Parsing ecmascript source code failed
+  2 | import Section from "@/components/Section";
+  3 | import FeatureCard from "@/components/FeatureCard";
+> 4 | import { Delivery, inventory-management } from "@carbon/icons-react";
+    |                             ^
+  5 | export default function Page() {
+  6 |   return (
+  7 |     <>
+
+Expected ',', got '-'
+[01:13:58.781] Browser ERROR   ./app/page.tsx:4:29
+Parsing ecmascript source code failed
+  2 | import Section from "@/components/Section";
+  3 | import FeatureCard from "@/components/FeatureCard";
+> 4 | import { Delivery, inventory-management } from "@carbon/icons-react";
+    |                             ^
+  5 | export default function Page() {
+  6 |   return (
+  7 |     <>
+
+Expected ',', got '-'
+[01:13:58.782] Browser ERROR   ./app/page.tsx:4:29
+Parsing ecmascript source code failed
+  2 | import Section from "@/components/Section";
+  3 | import FeatureCard from "@/components/FeatureCard";
+> 4 | import { Delivery, inventory-management } from "@carbon/icons-react";
+    |                             ^
+  5 | export default function Page() {
+  6 |   return (
+  7 |     <>
+
+Expected ',', got '-'
+[01:13:59.148] Browser ERROR   uncaughtError: Error: ./app/page.tsx:4:29
+Parsing ecmascript source code failed
+  2 | import Section from "@/components/Section";
+  3 | import FeatureCard from "@/components/FeatureCard";
+> 4 | import { Delivery, inventory-management } from "@carbon/icons-react";
+    |                             ^
+  5 | export default function Page() {
+  6 |   return (
+  7 |     <>
+
+Expected ',', got '-'
+
+
+[01:13:59.308] Browser ERROR   ./app/page.tsx:4:29
+Parsing ecmascript source code failed
+  2 | import Section from "@/components/Section";
+  3 | import FeatureCard from "@/components/FeatureCard";
+> 4 | import { Delivery, inventory-management } from "@carbon/icons-react";
+    |                             ^
+  5 | export default function Page() {
+  6 |   return (
+  7 |     <>
+
+Expected ',', got '-'
+[01:13:59.308] Browser ERROR   ./app/page.tsx:4:29
+Parsing ecmascript source code failed
+  2 | import Section from "@/components/Section";
+  3 | import FeatureCard from "@/components/FeatureCard";
+> 4 | import { Delivery, inventory-management } from "@carbon/icons-react";
+    |                             ^
+  5 | export default function Page() {
+  6 |   return (
+  7 |     <>
+
+Expected ',', got '-'
+[01:14:00.250] Browser ERROR   ./app/page.tsx:4:29
+Parsing ecmascript source code failed
+  2 | import Section from "@/components/Section";
+  3 | import FeatureCard from "@/components/FeatureCard";
+> 4 | import { Delivery, inventory-management } from "@carbon/icons-react";
+    |                             ^
+  5 | export default function Page() {
+  6 |   return (
+  7 |     <>
+
+Expected ',', got '-'
+[01:14:00.250] Browser ERROR   ./app/page.tsx:4:29
+Parsing ecmascript source code failed
+  2 | import Section from "@/components/Section";
+  3 | import FeatureCard from "@/components/FeatureCard";
+> 4 | import { Delivery, inventory-management } from "@carbon/icons-react";
+    |                             ^
+  5 | export default function Page() {
+  6 |   return (
+  7 |     <>
+
+Expected ',', got '-'
+[01:14:00.250] Browser ERROR   ./app/page.tsx:4:29
+Parsing ecmascript source code failed
+  2 | import Section from "@/components/Section";
+  3 | import FeatureCard from "@/components/FeatureCard";
+> 4 | import { Delivery, inventory-management } from "@carbon/icons-react";
+    |                             ^
+  5 | export default function Page() {
+  6 |   return (
+  7 |     <>
+
+Expected ',', got '-'
+[01:14:00.250] Browser ERROR   ./app/page.tsx:4:29
+Parsing ecmascript source code failed
+  2 | import Section from "@/components/Section";
+  3 | import FeatureCard from "@/components/FeatureCard";
+> 4 | import { Delivery, inventory-management } from "@carbon/icons-react";
+    |                             ^
+  5 | export default function Page() {
+  6 |   return (
+  7 |     <>
+
+Expected ',', got '-'
+[01:14:00.250] Browser ERROR   ./app/page.tsx:4:29
+Parsing ecmascript source code failed
+  2 | import Section from "@/components/Section";
+  3 | import FeatureCard from "@/components/FeatureCard";
+> 4 | import { Delivery, inventory-management } from "@carbon/icons-react";
+    |                             ^
+  5 | export default function Page() {
+  6 |   return (
+  7 |     <>
+
+Expected ',', got '-'
+[01:14:43.410] Server  LOG      ✓ Compiled in 144ms
+[01:14:44.258] Browser ERROR   ./app/page.tsx:4:29
+Parsing ecmascript source code failed
+  2 | import Section from "@/components/Section";
+  3 | import FeatureCard from "@/components/FeatureCard";
+> 4 | import { Delivery, inventory-management } from "@carbon/icons-react";
+    |                             ^
+  5 | export default function Page() {
+  6 |   return (
+  7 |     <>
+
+Expected ',', got '-'
+[01:14:44.258] Browser ERROR   ./app/page.tsx:4:29
+Parsing ecmascript source code failed
+  2 | import Section from "@/components/Section";
+  3 | import FeatureCard from "@/components/FeatureCard";
+> 4 | import { Delivery, inventory-management } from "@carbon/icons-react";
+    |                             ^
+  5 | export default function Page() {
+  6 |   return (
+  7 |     <>
+
+Expected ',', got '-'
+[01:15:10.246] Browser ERROR   ./app/page.tsx:4:29
+Parsing ecmascript source code failed
+  2 | import Section from "@/components/Section";
+  3 | import FeatureCard from "@/components/FeatureCard";
+> 4 | import { Delivery, inventory-management } from "@carbon/icons-react";
+    |                             ^
+  5 | export default function Page() {
+  6 |   return (
+  7 |     <>
+
+Expected ',', got '-'
+[01:15:10.246] Browser ERROR   ./app/page.tsx:4:29
+Parsing ecmascript source code failed
+  2 | import Section from "@/components/Section";
+  3 | import FeatureCard from "@/components/FeatureCard";
+> 4 | import { Delivery, inventory-management } from "@carbon/icons-react";
+    |                             ^
+  5 | export default function Page() {
+  6 |   return (
+  7 |     <>
+
+Expected ',', got '-'
+[01:16:13.259] Server  ERROR    ⨯ ./app/page.tsx:4:29
+Parsing ecmascript source code failed
+  2 | import Section from "@/components/Section";
+  3 | import FeatureCard from "@/components/FeatureCard";
+> 4 | import { Delivery, inventory-management } from "@carbon/icons-react";
+    |                             ^
+  5 | export default function Page() {
+  6 |   return (
+  7 |     <>
+
+Expected ',', got '-'
+
+
+[01:16:13.358] Browser ERROR   uncaughtError: Error: ./app/page.tsx:4:29
+Parsing ecmascript source code failed
+  2 | import Section from "@/components/Section";
+  3 | import FeatureCard from "@/components/FeatureCard";
+> 4 | import { Delivery, inventory-management } from "@carbon/icons-react";
+    |                             ^
+  5 | export default function Page() {
+  6 |   return (
+  7 |     <>
+
+Expected ',', got '-'
+
+
+[01:16:13.504] Browser ERROR   ./app/page.tsx:4:29
+Parsing ecmascript source code failed
+  2 | import Section from "@/components/Section";
+  3 | import FeatureCard from "@/components/FeatureCard";
+> 4 | import { Delivery, inventory-management } from "@carbon/icons-react";
+    |                             ^
+  5 | export default function Page() {
+  6 |   return (
+  7 |     <>
+
+Expected ',', got '-'
+[01:16:13.504] Browser ERROR   ./app/page.tsx:4:29
+Parsing ecmascript source code failed
+  2 | import Section from "@/components/Section";
+  3 | import FeatureCard from "@/components/FeatureCard";
+> 4 | import { Delivery, inventory-management } from "@carbon/icons-react";
+    |                             ^
+  5 | export default function Page() {
+  6 |   return (
+  7 |     <>
+
+Expected ',', got '-'
+[01:16:14.254] Browser ERROR   ./app/page.tsx:4:29
+Parsing ecmascript source code failed
+  2 | import Section from "@/components/Section";
+  3 | import FeatureCard from "@/components/FeatureCard";
+> 4 | import { Delivery, inventory-management } from "@carbon/icons-react";
+    |                             ^
+  5 | export default function Page() {
+  6 |   return (
+  7 |     <>
+
+Expected ',', got '-'
+[01:16:14.254] Browser ERROR   ./app/page.tsx:4:29
+Parsing ecmascript source code failed
+  2 | import Section from "@/components/Section";
+  3 | import FeatureCard from "@/components/FeatureCard";
+> 4 | import { Delivery, inventory-management } from "@carbon/icons-react";
+    |                             ^
+  5 | export default function Page() {
+  6 |   return (
+  7 |     <>
+
+Expected ',', got '-'
+[01:16:17.016] Server  ERROR    ⨯ ./app/page.tsx:4:29
+Parsing ecmascript source code failed
+  2 | import Section from "@/components/Section";
+  3 | import FeatureCard from "@/components/FeatureCard";
+> 4 | import { Delivery, inventory-management } from "@carbon/icons-react";
+    |                             ^
+  5 | export default function Page() {
+  6 |   return (
+  7 |     <>
+
+Expected ',', got '-'
+
+
+[01:16:17.105] Browser ERROR   uncaughtError: Error: ./app/page.tsx:4:29
+Parsing ecmascript source code failed
+  2 | import Section from "@/components/Section";
+  3 | import FeatureCard from "@/components/FeatureCard";
+> 4 | import { Delivery, inventory-management } from "@carbon/icons-react";
+    |                             ^
+  5 | export default function Page() {
+  6 |   return (
+  7 |     <>
+
+Expected ',', got '-'
+
+
+[01:16:17.247] Browser ERROR   ./app/page.tsx:4:29
+Parsing ecmascript source code failed
+  2 | import Section from "@/components/Section";
+  3 | import FeatureCard from "@/components/FeatureCard";
+> 4 | import { Delivery, inventory-management } from "@carbon/icons-react";
+    |                             ^
+  5 | export default function Page() {
+  6 |   return (
+  7 |     <>
+
+Expected ',', got '-'
+[01:16:17.247] Browser ERROR   ./app/page.tsx:4:29
+Parsing ecmascript source code failed
+  2 | import Section from "@/components/Section";
+  3 | import FeatureCard from "@/components/FeatureCard";
+> 4 | import { Delivery, inventory-management } from "@carbon/icons-react";
+    |                             ^
+  5 | export default function Page() {
+  6 |   return (
+  7 |     <>
+
+Expected ',', got '-'
+[01:16:17.247] Browser ERROR   ./app/page.tsx:4:29
+Parsing ecmascript source code failed
+  2 | import Section from "@/components/Section";
+  3 | import FeatureCard from "@/components/FeatureCard";
+> 4 | import { Delivery, inventory-management } from "@carbon/icons-react";
+    |                             ^
+  5 | export default function Page() {
+  6 |   return (
+  7 |     <>
+
+Expected ',', got '-'
+[01:16:17.247] Browser ERROR   ./app/page.tsx:4:29
+Parsing ecmascript source code failed
+  2 | import Section from "@/components/Section";
+  3 | import FeatureCard from "@/components/FeatureCard";
+> 4 | import { Delivery, inventory-management } from "@carbon/icons-react";
+    |                             ^
+  5 | export default function Page() {
+  6 |   return (
+  7 |     <>
+
+Expected ',', got '-'
+[01:16:33.342] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:16:40.681] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
