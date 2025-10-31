@@ -1,46 +1,39 @@
-/* ============================================================
-   Hero (scoped)
-   - Apple-like typography, token-based colors
-   - Optional dark/brand gradient variants
-   ============================================================ */
-
 .hero {
-  background: var(--bg);
-  color: var(--ink);
-  // padding: 120px 0 80px;
-  padding: 96px 0 96px; /* balanced top and bottom */
-  text-align: center;
+  position: relative; /* or any neutral base rule */
+  /* base colors set by variant classes below */
+}
+
+.wrap {
+  display: grid;
+  gap: 28px;
+}
+
+.copy {
+  align-self: center;
 }
 
 .title {
   font-size: var(--h1);
-  // font-size: clamp(40px, 5vw, 72px); /* more fluid scaling */
-  font-weight: 700;
   line-height: 1.1;
-  letter-spacing: -0.015em;
-  margin: 300 0 20px;
-  color: var(--ink);
+  font-weight: 700;
+  margin: 0 0 16px;
 }
 
 .lead {
-  font-family: inherit;
   font-size: var(--lead);
-  font-weight: 700;
-  color: var(--muted-strong);
+  color: var(--muted);
   max-width: 70ch;
-  margin: 0 auto 40px;
+  margin: 0 0 28px;
   line-height: 1.6;
 }
 
 .actions {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 14px;
+  display: inline-flex;
+  gap: 12px;
   flex-wrap: wrap;
 }
 
-/* Optional layout variants */
+/* alignment helpers for copy block */
 .left {
   text-align: left;
 }
@@ -48,7 +41,27 @@
   text-align: center;
 }
 
-/* Brand-dark gradient variant */
+/* vertical sizes (increase hero height) */
+.normal {
+  padding: 96px 0 64px;
+}
+.tall {
+  padding: 132px 0 92px;
+} /* default */
+.xtall {
+  padding: 160px 0 120px;
+}
+
+/* variants */
+.light {
+  background: var(--bg);
+  color: var(--ink);
+  border-bottom: 1px solid var(--border);
+}
+.dark {
+  background: #0b0f14;
+  color: var(--ink-inverse);
+}
 .brandDark {
   color: var(--ink-inverse);
   background: linear-gradient(
@@ -59,38 +72,186 @@
   );
 }
 
-/* Optional VFX layer if used in JSX as <div className={styles.bgVfx} /> */
-.bgVfx {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background: radial-gradient(
-      900px 420px at 15% 0%,
-      rgba(255, 255, 255, 0.12),
-      transparent
-    ),
-    radial-gradient(
-      600px 260px at 80% 10%,
-      color-mix(in srgb, var(--brand) 25%, transparent),
-      transparent
-    );
-  mix-blend-mode: screen;
+/* ============================================
+   MEDIA LAYOUTS — used when Hero has an image
+   ============================================ */
+// .wrap {
+//   display: grid;
+//   gap: 28px;
+// }
+// /* Base */
+// .wrap { display: grid; gap: 28px; }
+.withMedia {
+  align-items: center;
 }
 
-/* Ensure stacking if VFX is used */
-.inner {
-  position: relative;
-  z-index: 1;
+/* Placement variants (exported classes) */
+.withMediaLeft {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 560px);
+}
+.withMediaRight {
+  grid-template-columns: minmax(0, 560px) minmax(0, 1fr);
+}
+.withMediaTop {
+  display: flex; /* override grid */
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  padding-top: 30px;
 }
 
-/* Compact variant if needed on inner pages */
-.compact {
-  padding: 80px 0 56px;
+/* Media + image */
+.media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img {
+  width: auto;
+  height: 160px; /* make the logo big */
+  max-width: 340px;
+  object-fit: contain;
+  border: none;
+  box-shadow: none;
+  background: transparent;
 }
 
-/* Responsive tweaks */
+/* Subtle hover pulse effect (optional) */
+// .img:hover {
+//   transform: scale(1.04);
+//   opacity: 1;
+// }
+
+/* mobile stack — always single column */
 @media (max-width: 900px) {
-  .hero {
-    padding: 96px 0 64px;
+  .withMedia {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .img {
+    max-width: 200px;
   }
 }
+
+/* mobile stack */
+@media (max-width: 900px) {
+  .wrap {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+  }
+  .copy {
+    order: 1;
+  }
+  .media {
+    order: 2;
+  }
+  .actions {
+    justify-content: center;
+  }
+  .tall {
+    padding: 110px 0 78px;
+  }
+  .xtall {
+    padding: 132px 0 96px;
+  }
+}
+
+// /* ============================================================
+//    Hero (scoped)
+//    - Apple-like typography, token-based colors
+//    - Optional dark/brand gradient variants
+//    ============================================================ */
+
+// .hero {
+//   background: var(--bg);
+//   color: var(--ink);
+//   // padding: 120px 0 80px;
+//   padding: 96px 0 96px; /* balanced top and bottom */
+//   text-align: center;
+// }
+
+// .title {
+//   font-size: var(--h1);
+//   // font-size: clamp(40px, 5vw, 72px); /* more fluid scaling */
+//   font-weight: 700;
+//   line-height: 1.1;
+//   letter-spacing: -0.015em;
+//   margin: 300 0 20px;
+//   color: var(--ink);
+// }
+
+// .lead {
+//   font-family: inherit;
+//   font-size: var(--lead);
+//   font-weight: 700;
+//   color: var(--muted-strong);
+//   max-width: 70ch;
+//   margin: 0 auto 40px;
+//   line-height: 1.6;
+// }
+
+// .actions {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   gap: 14px;
+//   flex-wrap: wrap;
+// }
+
+// /* Optional layout variants */
+// .left {
+//   text-align: left;
+// }
+// .center {
+//   text-align: center;
+// }
+
+// /* Brand-dark gradient variant */
+// .brandDark {
+//   color: var(--ink-inverse);
+//   background: linear-gradient(
+//     180deg,
+//     var(--header-bg) 0%,
+//     #0f2433 60%,
+//     #152f42 100%
+//   );
+// }
+
+// /* Optional VFX layer if used in JSX as <div className={styles.bgVfx} /> */
+// .bgVfx {
+//   position: absolute;
+//   inset: 0;
+//   pointer-events: none;
+//   background: radial-gradient(
+//       900px 420px at 15% 0%,
+//       rgba(255, 255, 255, 0.12),
+//       transparent
+//     ),
+//     radial-gradient(
+//       600px 260px at 80% 10%,
+//       color-mix(in srgb, var(--brand) 25%, transparent),
+//       transparent
+//     );
+//   mix-blend-mode: screen;
+// }
+
+// /* Ensure stacking if VFX is used */
+// .inner {
+//   position: relative;
+//   z-index: 1;
+// }
+
+// /* Compact variant if needed on inner pages */
+// .compact {
+//   padding: 80px 0 56px;
+// }
+
+// /* Responsive tweaks */
+// @media (max-width: 900px) {
+//   .hero {
+//     padding: 96px 0 64px;
+//   }
+// }

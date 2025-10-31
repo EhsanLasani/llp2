@@ -1,36 +1,36 @@
 /* [project]/components/Hero.module.scss.module.css [app-client] (css) */
 .Hero-module-scss-module__mKgCGG__hero {
-  background: var(--bg);
-  color: var(--ink);
-  text-align: center;
-  padding: 96px 0;
+  position: relative;
+}
+
+.Hero-module-scss-module__mKgCGG__wrap {
+  gap: 28px;
+  display: grid;
+}
+
+.Hero-module-scss-module__mKgCGG__copy {
+  align-self: center;
 }
 
 .Hero-module-scss-module__mKgCGG__title {
   font-size: var(--h1);
-  letter-spacing: -.015em;
-  color: var(--ink);
-  margin: 300px 0 20px;
+  margin: 0 0 16px;
   font-weight: 700;
   line-height: 1.1;
 }
 
 .Hero-module-scss-module__mKgCGG__lead {
-  font-family: inherit;
   font-size: var(--lead);
-  color: var(--muted-strong);
+  color: var(--muted);
   max-width: 70ch;
-  margin: 0 auto 40px;
-  font-weight: 700;
+  margin: 0 0 28px;
   line-height: 1.6;
 }
 
 .Hero-module-scss-module__mKgCGG__actions {
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 14px;
-  display: flex;
+  gap: 12px;
+  display: inline-flex;
 }
 
 .Hero-module-scss-module__mKgCGG__left {
@@ -41,31 +41,105 @@
   text-align: center;
 }
 
+.Hero-module-scss-module__mKgCGG__normal {
+  padding: 96px 0 64px;
+}
+
+.Hero-module-scss-module__mKgCGG__tall {
+  padding: 132px 0 92px;
+}
+
+.Hero-module-scss-module__mKgCGG__xtall {
+  padding: 160px 0 120px;
+}
+
+.Hero-module-scss-module__mKgCGG__light {
+  background: var(--bg);
+  color: var(--ink);
+  border-bottom: 1px solid var(--border);
+}
+
+.Hero-module-scss-module__mKgCGG__dark {
+  color: var(--ink-inverse);
+  background: #0b0f14;
+}
+
 .Hero-module-scss-module__mKgCGG__brandDark {
   color: var(--ink-inverse);
   background: linear-gradient(180deg, var(--header-bg) 0%, #0f2433 60%, #152f42 100%);
 }
 
-.Hero-module-scss-module__mKgCGG__bgVfx {
-  pointer-events: none;
-  background: radial-gradient(900px 420px at 15% 0%, #ffffff1f, transparent), radial-gradient(600px 260px at 80% 10%, color-mix(in srgb, var(--brand) 25%, transparent), transparent);
-  mix-blend-mode: screen;
-  position: absolute;
-  inset: 0;
+.Hero-module-scss-module__mKgCGG__withMedia {
+  align-items: center;
 }
 
-.Hero-module-scss-module__mKgCGG__inner {
-  z-index: 1;
-  position: relative;
+.Hero-module-scss-module__mKgCGG__withMediaLeft {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 560px);
 }
 
-.Hero-module-scss-module__mKgCGG__compact {
-  padding: 80px 0 56px;
+.Hero-module-scss-module__mKgCGG__withMediaRight {
+  grid-template-columns: minmax(0, 560px) minmax(0, 1fr);
+}
+
+.Hero-module-scss-module__mKgCGG__withMediaTop {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-top: 30px;
+  display: flex;
+}
+
+.Hero-module-scss-module__mKgCGG__media {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.Hero-module-scss-module__mKgCGG__img {
+  object-fit: contain;
+  width: auto;
+  max-width: 340px;
+  height: 160px;
+  box-shadow: none;
+  background: none;
+  border: none;
 }
 
 @media (max-width: 900px) {
-  .Hero-module-scss-module__mKgCGG__hero {
-    padding: 96px 0 64px;
+  .Hero-module-scss-module__mKgCGG__withMedia {
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+  }
+
+  .Hero-module-scss-module__mKgCGG__img {
+    max-width: 200px;
+  }
+
+  .Hero-module-scss-module__mKgCGG__wrap {
+    text-align: center;
+    grid-template-columns: 1fr !important;
+  }
+
+  .Hero-module-scss-module__mKgCGG__copy {
+    order: 1;
+  }
+
+  .Hero-module-scss-module__mKgCGG__media {
+    order: 2;
+  }
+
+  .Hero-module-scss-module__mKgCGG__actions {
+    justify-content: center;
+  }
+
+  .Hero-module-scss-module__mKgCGG__tall {
+    padding: 110px 0 78px;
+  }
+
+  .Hero-module-scss-module__mKgCGG__xtall {
+    padding: 132px 0 96px;
   }
 }
 

@@ -1,11 +1,38 @@
 import Hero from "@/components/Hero";
+import Link from "next/link";
+import CategoryRail from "@/components/CategoryRail";
 import Section from "@/components/Section";
 import FeatureCard from "@/components/FeatureCard";
 // import { Delivery, inventory-management } from "@carbon/icons-react";
 export default function Page() {
   return (
     <>
-      <Hero />
+      <Hero
+        title={
+          <>
+            Reliability. Commitment. Value.
+            <br />
+            Engineered into Every Tube.
+          </>
+        }
+        subtitle="Lasani Fluid Power LLP is India’s OEM partner of choice for over four decades — combining globally sourced materials, in-house precision super-finish machining, and an efficient supply-chain network to deliver unmatched reliability and value across every cylinder tube supply."
+        align="center"
+        variant="light"
+        size="xtall"
+        media={{
+          src: "/images/logo/logodarkBlueTransparent.png",
+          alt: "Lasani logo",
+        }}
+        mediaPlacement="top"
+      >
+        <Link href="/products" className="cta primary">
+          Explore products
+        </Link>
+        <Link href="/contact" className="cta secondary">
+          Speak to an expert
+        </Link>
+      </Hero>
+
       <Section
         // eyebrow="Why Lasani"
         title="Why Lasani is the preferred partner for OEMs and MROs"
@@ -149,7 +176,7 @@ export default function Page() {
           </FeatureCard>
 
           <FeatureCard
-            title="Integrated Machining & Services"
+            title="On-Time Delivery"
             badge="Logistics Assurance"
             icon={
               <svg
@@ -169,6 +196,7 @@ export default function Page() {
             programs that keep hydraulic systems running with predictable
             turnaround and strict quality alignment.
           </FeatureCard>
+
           {/* <div className="card">
             <strong>Professional Tube Source</strong>
             <br />
@@ -185,6 +213,13 @@ export default function Page() {
           </div> */}
         </div>
       </Section>
+      <CategoryRail
+        title="A library you’ll want to get lost in."
+        subtitle="Browse our products, services, and capabilities."
+        autoScroll
+        // scrollStep={2} // optional (speed)
+        // scrollInterval={16} // optional (tick rate)
+      />
     </>
   );
 }

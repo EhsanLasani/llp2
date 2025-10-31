@@ -122,6 +122,7 @@ export default function Header() {
 
           {/* Desktop navigation */}
           <HeaderNavigation aria-label="Main navigation" className={styles.nav}>
+            <HeaderMenuItem href="/">Home</HeaderMenuItem>
             <HeaderMenuItem className={styles.navLink} href="/products">
               Products
             </HeaderMenuItem>
